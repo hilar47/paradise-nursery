@@ -1,0 +1,42 @@
+.about-us-container {
+  min-height: 100vh;
+  background-color: #f5f1e6;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 24px;
+}
+
+.about-us-card {
+  max-width: 680px;
+  background: #fbf9f1;
+  border: 1px solid rgba(43, 43, 36, 0.14);
+  border-radius: 16px;
+  padding: 40px 44px;
+}
+
+.about-us-card h1 {
+  color: #1f3a2e;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.about-us-card p {
+  line-height: 1.7;
+  color: #2b2b24;
+  margin-bottom: 18px;
+}
+
+.about-us-back-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #1f3a2e;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid #c99a3b;
+  padding-bottom: 2px;
+}
+
+.about-us-back-link:hover {
+  color: #c99a3b;
+}

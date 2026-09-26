@@ -1,0 +1,80 @@
+.landing-page {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/*
+  Background image for the landing page.
+  Encoded inline as an SVG data URI (a soft botanical leaf pattern over a
+  deep-forest gradient) so the app has zero external image dependencies
+  and works immediately after cloning the repo.
+*/
+.background-image {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1f3a2e;
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(124, 148, 115, 0.35) 0, transparent 40%),
+    radial-gradient(circle at 85% 75%, rgba(201, 154, 59, 0.25) 0, transparent 45%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'%3E%3Cg fill='none' stroke='%237C9473' stroke-width='2' opacity='0.18'%3E%3Cpath d='M40 200 C40 140 80 120 80 60 C80 120 120 140 120 200'/%3E%3Cpath d='M160 220 C160 160 200 140 200 80 C200 140 235 160 235 220'/%3E%3Cpath d='M0 90 C0 50 30 40 30 0 C30 40 55 50 55 90'/%3E%3C/g%3E%3C/svg%3E"),
+    linear-gradient(160deg, #1f3a2e 0%, #294d3b 60%, #1f3a2e 100%);
+  background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+  background-size: cover, cover, 240px 240px, cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 24px;
+}
+
+.landing_content {
+  max-width: 640px;
+  text-align: center;
+  color: #f5f1e6;
+}
+
+.landing_content h1 {
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #f5f1e6;
+}
+
+.divider {
+  width: 70px;
+  height: 3px;
+  background: #c99a3b;
+  margin: 22px auto;
+  border-radius: 2px;
+}
+
+.landing_content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #c9d4be;
+  margin: 0 0 34px;
+}
+
+.get-started-button {
+  background-color: #c99a3b;
+  color: #1f3a2e;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.get-started-button:hover {
+  background-color: #a87e2a;
+  transform: translateY(-2px);
+}
